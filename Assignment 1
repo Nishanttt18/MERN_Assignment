@@ -1,0 +1,50 @@
+
+
+//1-->program to check whether a number is prime or not
+
+function check(num){
+    if(num==1)
+        return true;
+    else{
+ 
+        for(var i=2;i<num;++i){
+            if(num%i==0){
+                return false;}
+        }
+        return true;
+    }
+}
+    console.log(check(17));
+
+//2-->program to check whether a number is armstrong or not
+
+function armstrong(n){
+    var str=n+"";
+    var sum=0;
+    for(var i=0;i<str.length;i++){
+        var x=parseInt(str[i]);
+        sum=sum+x**3;
+    }
+    console.log(sum);
+    if(sum==n)return true;
+    else return false;
+}
+
+
+
+//3-->program to implement add function 
+
+function add(){
+    var size = arguments.length;
+    var ans=0;
+    for(var i=0;i<size;i++){
+        var a = parseInt(arguments[i]);
+        if(a==isNaN){
+            a=0;
+            ans+=a;}
+        else if(!isFinite(a)){
+            a=0;}
+            ans+=a;
+    }
+    return ans;
+}
