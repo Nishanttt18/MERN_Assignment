@@ -1,0 +1,49 @@
+--> (1): program to calculate the area and perimeter of the rectangle by taking the values from the user
+function areas(){
+    var length = parseInt(prompt("Enter the lenght of the rectangle:"));
+    var breadth = parseInt(prompt("Enter the Breadth of the rectangle:"));
+    var area = length*breadth;
+    var parameter = 2*(length+breadth);
+    if(length > 0 && breadth > 0){
+    console.log("area is : ",area);
+    console.log("parameter is : " , parameter);    
+    }
+    else{console.log("Can not determine the area");
+         console.log("Can not determine the parameter");
+        }
+}
+areas()
+
+
+-->(2): program to implement arrow function
+
+var display = (a,b)=>{
+    console.log("value of addition is :" , a+b);
+}
+var substraction  = (a,b) => console.log("value of subtraction is: " , a-b);
+display(10,9);
+subtraction(10,8);
+
+
+--> (3): program to implement anonymous function
+function xyz(){
+    var t = function(a,b){
+        return a + b;}
+    var tt = function(a,b){
+        return a-b;}
+    return [t,tt];}
+    xyz()[0](2,3);
+    xyz()[1](2,3);
+
+--> (4): program to implement Named function
+function customer(){
+    var x = function add(ab,cd){
+        console.log(ab+cd);
+    }
+    var y = function sub(ab, cd){
+        console.log(ab-cd)
+    }
+    return [x,y]
+}
+customer()[0](10,20)
+customer()[1](10,20)
